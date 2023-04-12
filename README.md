@@ -1,5 +1,5 @@
-# responsi-pemweb
-Responsi Pemrograman Web Kelompok 8
+# kuis-praktikum-1-if08
+Kuis Pemrograman Web Kelompok 8
 
 ### Anggota Kelompok
 |**No**| **Nama** | **NIM** |
