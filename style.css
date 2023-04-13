@@ -47,10 +47,6 @@
     cursor: pointer;
 }
 
-.numBtn:hover {
-    background-color: #ddd;
-}
-
 .buttons button:active {
     background-color: #aaa;
 }
@@ -115,9 +111,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.opBtn:hover{
-    background-color: #ec5151;
-}
+
 .acBtn{
     background-color: #ccc;
     padding: 10px;
