@@ -13,16 +13,15 @@
             <div class="hiasan">
                 <button></button>
                 <button></button>
-                <button></button>
             </div>
             <div class="display">
-                <input type="text" id="display" disabled>
+                <input type="text" id="display" disabled />
             </div>
             <div class="buttons">
-                <button onclick="clearDisplay()" class="opBtn">AC</button>
-                <button onclick="addToDisplay('%')" class="opBtn">%</button>
+                <button onclick="clearDisplay()" class="clBtn">AC</button>
+                <button onclick="addToDisplay('+/-')" class="puBtn">+/-</button>
+                <button onclick="addToDisplay('%')" class="prBtn">%</button>
                 <button onclick="addToDisplay('/')" class="opBtn">÷</button>
-                <button onclick="addToDisplay('+-')" class="opBtn"><span>&#8723</span></button>
                 <button onclick="addToDisplay('7')" class="numBtn">7</button>
                 <button onclick="addToDisplay('8')" class="numBtn">8</button>
                 <button onclick="addToDisplay('9')" class="numBtn">9</button>
@@ -35,10 +34,10 @@
                 <button onclick="addToDisplay('2')" class="numBtn">2</button>
                 <button onclick="addToDisplay('3')" class="numBtn">3</button>
                 <button onclick="addToDisplay('+')" class="opBtn">+</button>
-                <button onclick="addToDisplay('<-')" class="opBtn"><span>&#8592;</span></button>
+                <button onclick="addToDisplay('<-')" class="bcBtn"><span>&#8592;</span></button>
                 <button onclick="addToDisplay('0')" class="numBtn">0</button>
                 <button onclick="addToDisplay('.')" class="numBtn">.</button>
-                <button onclick="calculate()" class="numBtn">=</button>
+                <button onclick="calculate()" class="rsBtn">=</button>
                 
             </div>
         </div>

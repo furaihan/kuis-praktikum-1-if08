@@ -6,7 +6,7 @@
 }
 
 .calculator {
-    background-color: #302f2f;
+    background-color: #131212;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -15,16 +15,19 @@
 .display {
     margin-bottom: 20px;
     margin-right: 20px;
+    height: 200px;
 }
 
 .display input {
+    background-color: #131212;
     width: 100%;
     padding: 10px;
     font-size: 20px;
     border: none;
     border-radius: 5px;
     text-align: right;
-    color: black;
+    color: rgb(0, 0, 0);
+    height: 170px;
 }
 
 .buttons {
@@ -34,7 +37,8 @@
 }
 
 .numBtn {
-    background-color: #ccc;
+    background-color: #272626;
+    color: #fff;
     padding: 10px;
     font-size: 20px;
     border: none;
@@ -52,13 +56,59 @@
 .hiasan{
     position: relative;
     top: 0;
-    left: 0;
+    left: 85px;
     display: relative;
     place-items: right;
     margin-bottom: 10px;
 }
 .opBtn{
-    background-color: #f30909;
+    background-color: #272626;
+    color: #fd7b01;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.puBtn{
+    background-color: #272626;
+    color: #01fde8;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.clBtn{
+    background-color: #272626;
+    color: #01fde8;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.prBtn{
+    background-color: #272626;
+    color: #01fde8;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rsBtn{
+    background-color: #272626;
+    color: #fd7b01;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bcBtn{
+    background-color: #272626;
+    color: #fff;
     padding: 10px;
     font-size: 20px;
     border: none;
