@@ -13,6 +13,10 @@
     width: 225px;
 }
 
+.calculator.light {
+    background-color: #e3dcdc;
+}
+
 .display {
     margin-bottom: 20px;
     margin-right: 20px;
@@ -31,6 +35,11 @@
     height: 170px;
 }
 
+.display input.light {
+    background-color: #e3dcdc;
+    color: #000;
+}
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -47,16 +56,40 @@
     cursor: pointer;
 }
 
+.numBtn.light{
+    background-color: #b7b3b3;
+    color: #000;
+}
+
 .buttons button:active {
     background-color: #aaa;
 }
 .hiasan{
     position: relative;
-    top: 0;
-    left: 90px;
-    place-items: right;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
     margin-bottom: 10px;
-}
+} 
+
+/* Styles for the toggle button container */
+.toggleBtn {
+    width: 50px;
+    height: 24px;
+    background-color: #444; /* Dark mode background color (default) */
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Styles for the toggle button container in light mode */
+  .toggleBtn.light {
+    background-color: #f8f8f8; /* Light mode background color */
+  }
+  
+
 .opBtn{
     background-color: #272626;
     color: #fd7b01;
