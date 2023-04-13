@@ -1,156 +1,155 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .calculator {
-    background-color: #131212;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 225px;
+  background-color: #131212;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 225px;
 }
 
 .calculator.light {
-    background-color: #e3dcdc;
+  background-color: #e3dcdc;
 }
 
 .display {
-    margin-bottom: 20px;
-    margin-right: 20px;
-    height: 200px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  height: 200px;
 }
 
 .display input {
-    background-color: #131212;
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    text-align: right;
-    color: #fff;
-    height: 170px;
+  background-color: #131212;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  color: #fff;
+  height: 170px;
 }
 
 .display input.light {
-    background-color: #e3dcdc;
-    color: #000;
+  background-color: #e3dcdc;
+  color: #000;
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 .numBtn {
-    background-color: #272626;
-    color: #fff;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #272626;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.numBtn.light{
-    background-color: #b7b3b3;
-    color: #000;
+.numBtn.light {
+  background-color: #b7b3b3;
+  color: #000;
 }
 
 .buttons button:active {
-    background-color: #aaa;
+  background-color: #aaa;
 }
-.hiasan{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    place-items: center;
-    margin-bottom: 10px;
-} 
+.hiasan {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+  margin-bottom: 10px;
+}
 
 /* Styles for the toggle button container */
 .toggleBtn {
-    width: 50px;
-    height: 24px;
-    background-color: #444; /* Dark mode background color (default) */
-    border-radius: 12px;
-    cursor: pointer;
-    position: relative;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  /* Styles for the toggle button container in light mode */
-  .toggleBtn.light {
-    background-color: #f8f8f8; /* Light mode background color */
-  }
-  
-
-.opBtn{
-    background-color: #272626;
-    color: #fd7b01;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.puBtn{
-    background-color: #272626;
-    color: #01fde8;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.clBtn{
-    background-color: #272626;
-    color: #01fde8;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.prBtn{
-    background-color: #272626;
-    color: #01fde8;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.rsBtn{
-    background-color: #272626;
-    color: #fd7b01;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.bcBtn{
-    background-color: #272626;
-    color: #fff;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  width: 50px;
+  height: 24px;
+  background-color: #444; /* Dark mode background color (default) */
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.acBtn{
-    background-color: #ccc;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    grid-column: span 4;
+/* Styles for the toggle button container in light mode */
+.toggleBtn.light {
+  background-color: #f8f8f8; /* Light mode background color */
+}
+
+.opBtn {
+  background-color: #272626;
+  color: #fd7b01;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.puBtn {
+  background-color: #272626;
+  color: #01fde8;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.clBtn {
+  background-color: #272626;
+  color: #01fde8;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.prBtn {
+  background-color: #272626;
+  color: #01fde8;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.rsBtn {
+  background-color: #272626;
+  color: #fd7b01;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bcBtn {
+  background-color: #272626;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.acBtn {
+  background-color: #ccc;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  grid-column: span 4;
 }
