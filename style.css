@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-.buttons button:hover {
+.numBtn:hover {
     background-color: #ddd;
 }
 
@@ -64,6 +64,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.opBtn:hover{
+    background-color: #ec5151;
 }
 .acBtn{
     background-color: #ccc;

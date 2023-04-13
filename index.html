@@ -21,21 +21,21 @@
             <div class="buttons">
                 <button onclick="clearDisplay()" class="opBtn">AC</button>
                 <button onclick="addToDisplay('%')" class="opBtn">%</button>
-                <button onclick="addToDisplay('/')" class="opBtn">÷</button>
-                <button onclick="addToDisplay('+-')" class="opBtn"><span>&#8723</span></button>
+                <button onclick="negate()" class="opBtn"><span>&#8723</span></button>
+                <button onclick="addToDisplay('+')" class="opBtn">+</button>
                 <button onclick="addToDisplay('7')" class="numBtn">7</button>
                 <button onclick="addToDisplay('8')" class="numBtn">8</button>
                 <button onclick="addToDisplay('9')" class="numBtn">9</button>
-                <button onclick="addToDisplay('*')" class="opBtn">×</button>
+                <button onclick="addToDisplay('-')" class="opBtn">−</button>
                 <button onclick="addToDisplay('4')" class="numBtn">4</button>
                 <button onclick="addToDisplay('5')" class="numBtn">5</button>
                 <button onclick="addToDisplay('6')" class="numBtn">6</button>
-                <button onclick="addToDisplay('-')" class="opBtn">−</button>
+                <button onclick="addToDisplay('*')" class="opBtn">×</button>
                 <button onclick="addToDisplay('1')" class="numBtn">1</button>
                 <button onclick="addToDisplay('2')" class="numBtn">2</button>
                 <button onclick="addToDisplay('3')" class="numBtn">3</button>
-                <button onclick="addToDisplay('+')" class="opBtn">+</button>
-                <button onclick="addToDisplay('<-')" class="opBtn"><span>&#8592;</span></button>
+                <button onclick="addToDisplay('/')" class="opBtn">÷</button>
+                <button onclick="backspace()" class="opBtn"><span>&#8592;</span></button>
                 <button onclick="addToDisplay('0')" class="numBtn">0</button>
                 <button onclick="addToDisplay('.')" class="numBtn">.</button>
                 <button onclick="calculate()" class="numBtn">=</button>
@@ -43,5 +43,6 @@
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
