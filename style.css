@@ -6,37 +6,69 @@
 }
 
 .calculator {
-  background-color: #131212;
-  padding: 15px;
-  border-radius: 10px;
+  background-color: #22252d;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 225px;
+  width: 235px;
+}
+
+.btnBackground {
+  position: relative;
+  background-color: #292d36;
+  width: 235px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  padding-right: 15px;
+  border-radius: 20px;
+  transform: translate(-15px);
+}
+
+.btnBackground.light {
+  background-color: #f9f9f9;
+}
+
+.back {
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  height: 5px;
+  width: 115px;
+  border-radius: 10px;
+  background-color: #464a51;
+  transform: translateY(275px);
 }
 
 .calculator.light {
-  background-color: #e3dcdc;
+  background-color: #ffffff;
 }
 
 .display {
   margin-bottom: 20px;
   margin-right: 20px;
   height: 200px;
+  bottom: 0px;
 }
 
 .displayInput {
-  background-color: #131212;
+  background-color: #22252d;
   width: 100%;
   padding: 10px;
-  font-size: 20px;
+  font-size: 30px;
   border: none;
   border-radius: 5px;
   text-align: right;
   color: #fff;
-  height: 170px;
+  height: 290px;
 }
 
 .displayInput.light {
-  background-color: #e3dcdc;
+  background-color: #ffffff;
   color: #000;
 }
 
@@ -47,7 +79,7 @@
 }
 
 .numBtn {
-  background-color: #272626;
+  background-color: #272b33;
   color: #fff;
   padding: 10px;
   font-size: 20px;
@@ -57,13 +89,39 @@
 }
 
 .numBtn.light {
-  background-color: #b7b3b3;
+  background-color: #dedede;
   color: #000;
 }
 
 .buttons button:active {
   background-color: #aaa;
 }
+
+.jam {
+  font-size: 10px;
+  color: white;
+}
+
+.jam.light {
+  color: #22252d;
+}
+
+
+.utility {
+  margin-left: 169px;
+  font-size: 8px;
+  color: white;
+}
+
+.utility.light {
+  color: #22252d;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+}
+
 .hiasan {
   position: relative;
   align-items: center;
@@ -71,14 +129,15 @@
   text-align: center;
   place-items: center;
   margin-bottom: 10px;
+  transform: translateY(20px);
 }
 
 /* Styles for the toggle button container */
 .toggleBtn {
-  width: 50px;
-  height: 24px;
-  background-color: #444; /* Dark mode background color (default) */
-  border-radius: 12px;
+  width: 70px;
+  height: 28px;
+  background-color: #292d36; /* Dark mode background color (default) */
+  border-radius: 10px;
   cursor: pointer;
   position: relative;
   transition: background-color 0.3s ease-in-out;
@@ -86,12 +145,32 @@
 
 /* Styles for the toggle button container in light mode */
 .toggleBtn.light {
-  background-color: #f8f8f8; /* Light mode background color */
+  background-color: #f9f9f9; /* Light mode background color */
+}
+
+.toggleBtn .fa-sun{
+  color: #6a6c72;
+}
+
+.toggleBtn .fa-moon{
+  color: #292d36;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.toggleBtn .fa-sun.light{
+  color: #292d36;
+}
+
+.toggleBtn .fa-moon.light{
+  color: #f9f9f9;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e1e1e1;
 }
 
 .opBtn {
-  background-color: #272626;
-  color: #fd7b01;
+  background-color: #272b33;
+  color: #e16262;
   padding: 10px;
   font-size: 20px;
   border: none;
@@ -99,11 +178,11 @@
   cursor: pointer;
 }
 .opBtn.light{
-  background-color: #b7b3b3;
+  background-color: #dedede;
 }
 .cyanBtn{
-  background-color: #272626;
-  color: #20a499;
+  background-color: #272b33;
+  color: #26dbba;
   padding: 10px;
   font-size: 20px;
   border: none;
@@ -111,6 +190,6 @@
   cursor: pointer;
 }
 .cyanBtn.light{
-  background-color: #b7b3b3;
+  background-color: #dedede;
 }
 

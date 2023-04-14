@@ -6,49 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator - Kelompok 8</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/ede703b39e.js" crossorigin="anonymous"></script>
   </head>
   <body bgcolor="grey">
     <div class="container">
       <div class="calculator">
+        <div class="status">
+          <div class="jam">
+            <b>07:07</b>
+          </div>
+          <div class="utility">
+            <i class="fa-solid fa-signal"></i>&nbsp;&nbsp;
+            <i class="fa-solid fa-wifi"></i>&nbsp;&nbsp;
+            <i class="fa-solid fa-battery-full"></i>
+          </div>
+        </div>
         <div class="hiasan">
           <button
             class="toggleBtn"
             id="toggleBtn"
             onclick="toggleLightMode()"
-          ></button>
+          ><i class="fa-solid fa-sun fa-boder"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-moon"></i></button>
         </div>
         <div class="display">
           <input type="text" id="display" class="displayInput" disabled />
         </div>
-        <div class="buttons">
-          <button onclick="clearDisplay()" class="cyanBtn">AC</button>
-          <button onclick="negate()" class="cyanBtn">+/-</button>
-          <button onclick="addToDisplay('%')" class="cyanBtn">%</button>
-          <button onclick="addToDisplay('/')" class="opBtn">÷</button>
-          <button onclick="addToDisplay('7')" class="numBtn">7</button>
-          <button onclick="addToDisplay('8')" class="numBtn">8</button>
-          <!-- Button Untuk Menampilkan 9 -->
-          <button onclick="addToDisplay('9')" class="numBtn">9</button>
-          <button onclick="addToDisplay('-')" class="opBtn">−</button>
-          <button onclick="addToDisplay('4')" class="numBtn">4</button>
-          <!-- Button Untuk Menampilkan 5 -->
-          <button onclick="addToDisplay('5')" class="numBtn">5</button>
-          <!-- Button Untuk Menampilkan 6 -->
-          <button onclick="addToDisplay('6')" class="numBtn">6</button>
-          <button onclick="addToDisplay('*')" class="opBtn">×</button>
-          <button onclick="addToDisplay('1')" class="numBtn">1</button>
-          <!-- Button Untuk Menampilkan 2 -->
-          <button onclick="addToDisplay('2')" class="numBtn">2</button>
-          <!-- Button Untuk Menampilkan 3 -->
-          <button onclick="addToDisplay('3')" class="numBtn">3</button>
-          <button onclick="addToDisplay('+')" class="opBtn">+</button>
-          <button onclick="backspace()" class="numBtn">
-            <span>&#8592;</span>
-          </button>
-          <button onclick="addToDisplay('0')" class="numBtn">0</button>
-          <!-- Button Untuk Menampilkan Koma -->
-          <button onclick="addToDisplay('.')" class="numBtn">.</button>
-          <button onclick="calculate()" class="opBtn">=</button>
+        <div class="btnBackground">
+          <div class="buttons">
+            <button onclick="clearDisplay()" class="cyanBtn">AC</button>
+            <button onclick="negate()" class="cyanBtn">+/-</button>
+            <button onclick="addToDisplay(' % ')" class="cyanBtn">%</button>
+            <button onclick="addToDisplay(' / ')" class="opBtn">÷</button>
+            <button onclick="addToDisplay('7')" class="numBtn">7</button>
+            <button onclick="addToDisplay('8')" class="numBtn">8</button>
+            <!-- Button Untuk Menampilkan 9 -->
+            <button onclick="addToDisplay('9')" class="numBtn">9</button>
+            <button onclick="addToDisplay(' - ')" class="opBtn">−</button>
+            <button onclick="addToDisplay('4')" class="numBtn">4</button>
+            <!-- Button Untuk Menampilkan 5 -->
+            <button onclick="addToDisplay('5')" class="numBtn">5</button>
+            <!-- Button Untuk Menampilkan 6 -->
+            <button onclick="addToDisplay('6')" class="numBtn">6</button>
+            <button onclick="addToDisplay(' * ')" class="opBtn">×</button>
+            <button onclick="addToDisplay('1')" class="numBtn">1</button>
+            <!-- Button Untuk Menampilkan 2 -->
+            <button onclick="addToDisplay('2')" class="numBtn">2</button>
+            <!-- Button Untuk Menampilkan 3 -->
+            <button onclick="addToDisplay('3')" class="numBtn">3</button>
+            <button onclick="addToDisplay(' + ')" class="opBtn">+</button>
+            <button onclick="backspace()" class="numBtn">
+              <span>&#8592;</span>
+            </button>
+            <button onclick="addToDisplay('0')" class="numBtn">0</button>
+            <!-- Button Untuk Menampilkan Koma -->
+            <button onclick="addToDisplay('.')" class="numBtn">.</button>
+            <button onclick="calculate()" class="opBtn">=</button>
+            <div class="back"></div>
+          </div>
         </div>
       </div>
     </div>
