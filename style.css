@@ -98,45 +98,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.puBtn {
+.cyanBtn{
   background-color: #272626;
   color: #01fde8;
-  padding: 10px;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.clBtn {
-  background-color: #272626;
-  color: #01fde8;
-  padding: 10px;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.prBtn {
-  background-color: #272626;
-  color: #01fde8;
-  padding: 10px;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.rsBtn {
-  background-color: #272626;
-  color: #fd7b01;
-  padding: 10px;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.bcBtn {
-  background-color: #272626;
-  color: #fff;
   padding: 10px;
   font-size: 20px;
   border: none;
@@ -144,12 +108,3 @@
   cursor: pointer;
 }
 
-.acBtn {
-  background-color: #ccc;
-  padding: 10px;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  grid-column: span 4;
-}

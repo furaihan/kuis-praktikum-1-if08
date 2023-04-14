@@ -7,7 +7,7 @@
     <title>Calculator - Kelompok 8</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body bgcolor="grey">
     <div class="container">
       <div class="calculator">
         <div class="hiasan">
@@ -21,9 +21,9 @@
           <input type="text" id="display" disabled />
         </div>
         <div class="buttons">
-          <button onclick="clearDisplay()" class="clBtn">AC</button>
-          <button onclick="negate()" class="puBtn">+/-</button>
-          <button onclick="addToDisplay('%')" class="prBtn">%</button>
+          <button onclick="clearDisplay()" class="cyanBtn">AC</button>
+          <button onclick="negate()" class="cyanBtn">+/-</button>
+          <button onclick="addToDisplay('%')" class="cyanBtn">%</button>
           <button onclick="addToDisplay('/')" class="opBtn">÷</button>
           <button onclick="addToDisplay('7')" class="numBtn">7</button>
           <button onclick="addToDisplay('8')" class="numBtn">8</button>
@@ -42,13 +42,13 @@
           <!-- Button Untuk Menampilkan 3 -->
           <button onclick="addToDisplay('3')" class="numBtn">3</button>
           <button onclick="addToDisplay('+')" class="opBtn">+</button>
-          <button onclick="backspace()" class="bcBtn">
+          <button onclick="backspace()" class="numBtn">
             <span>&#8592;</span>
           </button>
           <button onclick="addToDisplay('0')" class="numBtn">0</button>
           <!-- Button Untuk Menampilkan Koma -->
           <button onclick="addToDisplay('.')" class="numBtn">.</button>
-          <button onclick="calculate()" class="rsBtn">=</button>
+          <button onclick="calculate()" class="opBtn">=</button>
         </div>
       </div>
     </div>

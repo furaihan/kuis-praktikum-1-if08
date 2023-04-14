@@ -34,7 +34,6 @@ function toggleLightMode() {
     document.querySelectorAll(".numBtn").forEach((item) => {
       item.classList.remove("light");
     });
-    //document.querySelector(".numBtn").classList.remove("light");
   } else {
     document.body.classList.add("light");
     document.querySelector(".display").classList.add("light");
@@ -42,7 +41,6 @@ function toggleLightMode() {
     document.querySelectorAll(".numBtn").forEach((item) => {
       item.classList.add("light");
     });
-    //document.querySelector(".numBtn").classList.add("light");
   }
   document.body.classList.forEach((item) => {
     console.log(item);
