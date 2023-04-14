@@ -23,7 +23,7 @@
   height: 200px;
 }
 
-.display input {
+.displayInput {
   background-color: #131212;
   width: 100%;
   padding: 10px;
@@ -35,7 +35,7 @@
   height: 170px;
 }
 
-.display input.light {
+.displayInput.light {
   background-color: #e3dcdc;
   color: #000;
 }
@@ -98,13 +98,19 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.opBtn.light{
+  background-color: #b7b3b3;
+}
 .cyanBtn{
   background-color: #272626;
-  color: #01fde8;
+  color: #20a499;
   padding: 10px;
   font-size: 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.cyanBtn.light{
+  background-color: #b7b3b3;
 }
 
