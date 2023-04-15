@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator - Kelompok 8</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome kit untuk kustom icon -->
     <script src="https://kit.fontawesome.com/ede703b39e.js" crossorigin="anonymous"></script>
   </head>
   <body bgcolor="grey">
     <div class="container">
       <div class="calculator">
+        <!-- Div untuk statusbar seolah di hp android -->
         <div class="status">
+          <!-- Div untuk menampilkan jam -->
           <div class="jam">
             <b>07:07</b>
           </div>
+          <!-- Div untuk menampilkan sinyal, wifi, dan baterai -->
           <div class="utility">
             <i class="fa-solid fa-signal"></i>&nbsp;&nbsp;
             <i class="fa-solid fa-wifi"></i>&nbsp;&nbsp;
@@ -22,44 +26,61 @@
           </div>
         </div>
         <div class="hiasan">
+          <!-- Button untuk mengubah tema -->
           <button
             class="toggleBtn"
             id="toggleBtn"
             onclick="toggleLightMode()"
           ><i class="fa-solid fa-sun fa-boder"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-moon"></i></button>
         </div>
+        <!-- Div untuk menampilkan hasil -->
         <div class="display">
           <input type="text" id="display" class="displayInput" disabled />
         </div>
         <div class="btnBackground">
+          <!-- Div untuk menampilkan tombol -->
           <div class="buttons">
+            <!-- Button Untuk Menampilkan AC -->
             <button onclick="clearDisplay()" class="cyanBtn">AC</button>
+            <!-- Button Untuk Menampilkan +/- -->
             <button onclick="negate()" class="cyanBtn">+/-</button>
+            <!-- Button Untuk Menampilkan % -->
             <button onclick="addToDisplay(' % ')" class="cyanBtn">%</button>
+            <!-- Button Untuk Menampilkan / -->
             <button onclick="addToDisplay(' / ')" class="opBtn">÷</button>
+            <!-- Button untuk menampilkan 7 -->
             <button onclick="addToDisplay('7')" class="numBtn">7</button>
+            <!-- Button Untuk Menampilkan 8 -->
             <button onclick="addToDisplay('8')" class="numBtn">8</button>
             <!-- Button Untuk Menampilkan 9 -->
             <button onclick="addToDisplay('9')" class="numBtn">9</button>
+            <!-- Button untuk menampilkan - -->
             <button onclick="addToDisplay(' - ')" class="opBtn">−</button>
+            <!-- Button Untuk Menampilkan 4 -->
             <button onclick="addToDisplay('4')" class="numBtn">4</button>
             <!-- Button Untuk Menampilkan 5 -->
             <button onclick="addToDisplay('5')" class="numBtn">5</button>
             <!-- Button Untuk Menampilkan 6 -->
             <button onclick="addToDisplay('6')" class="numBtn">6</button>
+            <!-- Button Untuk Menampilkan * -->
             <button onclick="addToDisplay(' * ')" class="opBtn">×</button>
+            <!-- Button Untuk Menampilkan 1 -->
             <button onclick="addToDisplay('1')" class="numBtn">1</button>
             <!-- Button Untuk Menampilkan 2 -->
             <button onclick="addToDisplay('2')" class="numBtn">2</button>
             <!-- Button Untuk Menampilkan 3 -->
             <button onclick="addToDisplay('3')" class="numBtn">3</button>
+            <!-- Button Untuk Menampilkan + -->
             <button onclick="addToDisplay(' + ')" class="opBtn">+</button>
+            <!-- Button Untuk Menampilkan Backspace -->
             <button onclick="backspace()" class="numBtn">
               <span>&#8592;</span>
             </button>
+            <!-- Button Untuk Menampilkan 0 -->
             <button onclick="addToDisplay('0')" class="numBtn">0</button>
             <!-- Button Untuk Menampilkan Koma -->
             <button onclick="addToDisplay('.')" class="numBtn">.</button>
+            <!-- Button Untuk Menampilkan = -->
             <button onclick="calculate()" class="opBtn">=</button>
             <div class="back"></div>
           </div>
