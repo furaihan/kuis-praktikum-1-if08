@@ -108,7 +108,6 @@
 
 
 .utility {
-  margin-left: 169px;
   font-size: 8px;
   color: white;
 }
@@ -119,6 +118,7 @@
 
 .status {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
 }
 
