@@ -1,3 +1,10 @@
+body{
+  background-color: #6b6b6d;
+}
+
+body.light{
+  background-color: #dedbdb;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -16,19 +23,15 @@
 }
 
 .btnBackground {
-  position: relative;
   background-color: #292d36;
   width: 235px;
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 35px;
-  padding-right: 15px;
-  border-radius: 20px;
+  padding: 15px 15px 35px 15px;
+  border-radius: 30px 25px 30px 20px;
   transform: translate(-15px);
 }
 
 .btnBackground.light {
-  background-color: #f9f9f9;
+  background-color: #f5f5f5;
 }
 
 .back {
@@ -98,6 +101,7 @@
 }
 
 .jam {
+  font-family: 'Roboto', sans-serif;
   font-size: 10px;
   color: white;
 }
@@ -140,12 +144,13 @@
   border-radius: 10px;
   cursor: pointer;
   position: relative;
+  border-color: transparent;
   transition: background-color 0.3s ease-in-out;
 }
 
 /* Styles for the toggle button container in light mode */
 .toggleBtn.light {
-  background-color: #f9f9f9; /* Light mode background color */
+  background-color: #f0f0f0; /* Light mode background color */
 }
 
 .toggleBtn .fa-sun{
