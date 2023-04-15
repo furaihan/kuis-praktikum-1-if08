@@ -1,5 +1,6 @@
 body{
   background-color: #6b6b6d;
+  transition: background-color 0.5s ease-in-out;
 }
 
 body.light{
@@ -20,6 +21,7 @@ body.light{
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 235px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btnBackground {
@@ -28,6 +30,7 @@ body.light{
   padding: 15px 15px 35px 15px;
   border-radius: 30px 25px 30px 20px;
   transform: translate(-15px);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btnBackground.light {
@@ -68,6 +71,7 @@ body.light{
   text-align: right;
   color: #fff;
   height: 290px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .displayInput.light {
@@ -89,6 +93,7 @@ body.light{
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .numBtn.light {
@@ -104,6 +109,7 @@ body.light{
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   color: white;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .jam.light {
@@ -114,6 +120,7 @@ body.light{
 .utility {
   font-size: 8px;
   color: white;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .utility.light {
@@ -155,12 +162,14 @@ body.light{
 
 .toggleBtn .fa-sun{
   color: #6a6c72;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .toggleBtn .fa-moon{
   color: #292d36;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .toggleBtn .fa-sun.light{
@@ -181,6 +190,7 @@ body.light{
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 .opBtn.light{
   background-color: #dedede;
@@ -193,6 +203,7 @@ body.light{
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 .cyanBtn.light{
   background-color: #dedede;
