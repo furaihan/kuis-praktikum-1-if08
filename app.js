@@ -42,7 +42,7 @@ function addToDisplay(value) {
     try {
       display.value = eval(display.value);
     } catch (error) {
-      display.value = "Error";
+      display.value = "Error: " + error.message;
     }
   }
   
