@@ -46,61 +46,45 @@ function addToDisplay(value) {
     }
   }
   
-  
-/*
+/**
+ * toggleLightMode - A recursive function to toggle the "light" class on a list of elements.
+ *
+ * @param {number} index - The current index of the class to be processed in the classes array.
+ *                        Defaults to 0.
+ *
+ * @returns {void}
+ */  
+function toggleLightMode(index = 0) {
+  const classes = [
+    ".body",
+    ".displayInput",
+    ".calculator",
+    ".btnBackground",
+    ".toggleBtn",
+    ".toggleBtn .fa-sun",
+    ".toggleBtn .fa-moon",
+    ".jam",
+    ".utility",
+    ".numBtn",
+    ".cyanBtn",
+    ".opBtn"
+  ];
 
-Fungsi untuk mengganti mode tampilan menjadi mode terang atau mode gelap pada suatu kalkulator.
-
-Jika body memiliki kelas CSS "light", maka kelas-kelas CSS yang terkait dengan mode terang akan dihapus,
-
-dan sebaliknya jika tidak memiliki kelas "light", maka kelas-kelas CSS yang terkait dengan mode gelap akan ditambahkan.
-
-Selain itu, kelas-kelas CSS untuk elemen-elemen seperti tombol, input, ikon, dan lainnya juga akan ditambahkan atau dihapus sesuai dengan mode yang dipilih.
-
-Pada akhirnya, fungsi ini akan mencetak kelas-kelas CSS yang ada pada elemen body ke dalam konsol.
-*/
-function toggleLightMode() {
-  if (document.body.classList.contains("light")) {
-    // Hapus kelas CSS "light" dari body
-    document.body.classList.remove("light");
-    document.querySelector(".displayInput").classList.remove("light");
-    document.querySelector(".calculator").classList.remove("light");
-    document.querySelector(".btnBackground").classList.remove("light");
-    document.querySelector(".toggleBtn").classList.remove("light");
-    document.querySelector(".toggleBtn .fa-sun").classList.remove("light");
-    document.querySelector(".toggleBtn .fa-moon").classList.remove("light");
-    document.querySelector(".jam").classList.remove("light");
-    document.querySelector(".utility").classList.remove("light");
-    // Hapus kelas CSS "light" dari semua tombol
-    document.querySelectorAll(".numBtn").forEach((item) => {
-      item.classList.remove("light");
-    });
-    document.querySelectorAll(".cyanBtn").forEach((item) => {
-      item.classList.remove("light");
-    });
-    document.querySelectorAll(".opBtn").forEach((item) => {
-      item.classList.remove("light");
-    });
-  } else {
-    // Tambahkan kelas CSS "light" ke body
-    document.body.classList.add("light");
-    document.querySelector(".displayInput").classList.add("light");
-    document.querySelector(".calculator").classList.add("light");
-    document.querySelector(".btnBackground").classList.add("light");
-    document.querySelector(".toggleBtn").classList.add("light");
-    document.querySelector(".fa-sun").classList.add("light");
-    document.querySelector(".fa-moon").classList.add("light");
-    document.querySelector(".jam").classList.add("light");
-    document.querySelector(".utility").classList.add("light");
-    // Tambahkan kelas CSS "light" ke semua tombol
-    document.querySelectorAll(".numBtn").forEach((item) => {
-      item.classList.add("light");
-    });
-    document.querySelectorAll(".cyanBtn").forEach((item) => {
-      item.classList.add("light");
-    });
-    document.querySelectorAll(".opBtn").forEach((item) => {
-      item.classList.add("light");
-    });
+  if (index === classes.length) {
+    return; // Base case: exit when all classes have been processed
   }
+
+  const elements = document.querySelectorAll(classes[index]);
+
+  elements.forEach(element => {
+    if (element.classList.contains("light")) {
+      element.classList.remove("light");
+    } else {
+      element.classList.add("light");
+    }
+  });
+
+  toggleLightMode(index + 1); // Recursive call to process next class
 }
+
+
